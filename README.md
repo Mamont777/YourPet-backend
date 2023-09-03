@@ -7,7 +7,7 @@
     <h2>Welcome to <a style="text-decoration: none;" href="https://github.com/Mamont777/YourPet-backend" target="_blank" rel="noreferrer">YourPets repository</a></h2>
    </div>
    </div>
-   <h2 style="margin-left: 100px;">Here is an  <a style="text-decoration: none;" href="https://github.com/Mamont777/YourPet" target="_blank" rel="noreferrer">example</a> of the best use of this API
+   <h2 style="margin-left: 100px;">Here is an  <a style="text-decoration: none;" href="https://mamont777.github.io/YourPet/" target="_blank" rel="noreferrer">example</a> of the best use of this API
    </h2>
    <p style="font-size: 20px;">YourPets is a web application that helps people find loving families for their pets. It allows users to create notices for their pets, which can be either for sale, lost/found, or offered for free. Users can also search for pets that are available for adoption.</p>
     <h3>Installation</h3>
