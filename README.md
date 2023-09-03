@@ -1,7 +1,7 @@
 # yourPets-backend
 
  <div style="display: flex; gap: 15px;">
-    <img src="/temp/favicon.ico" alt="favicon" width="130" height="130"> 
+    <img src="/tmp/favicon.ico" alt="favicon" width="130" height="130"> 
    <div>
     <h1> YourPets-backend <a style="text-decoration: none;" href="https://team-project-backend-881k.onrender.com" target="_blank" rel="noreferrer">Documentation</a></h1>
     <h2>Welcome to <a style="text-decoration: none;" href="https://github.com/Mamont777/YourPet-backend" target="_blank" rel="noreferrer">YourPets repository</a></h2>
