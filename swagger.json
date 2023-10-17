@@ -730,7 +730,7 @@
                     "birthday": {
                       "type": "string",
                       "description": "User's birthday",
-                      "example": "11-05-2005"
+                      "example": "11.05.2005"
                     },
                     "type": {
                       "type": "string",
@@ -812,7 +812,7 @@
             "birthday": {
               "type": "string",
               "description": "Pet's birthday",
-              "birthday": "01-01-2022"
+              "birthday": "01.01.2022"
             },
             "type": {
               "type": "string",
@@ -976,7 +976,7 @@
           "birthday": {
             "type": "string",
             "description": "Pet's birthday",
-            "birthday": "01-01-2022"
+            "birthday": "01.01.2022"
           },
           "type": {
             "type": "string",
