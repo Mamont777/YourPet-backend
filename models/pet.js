@@ -56,7 +56,7 @@ const addPetSchema = Joi.object({
   birthday: Joi.string().pattern(regexp.birthday).required().messages({
     'string.base': 'The "Birthday" field must be a string',
     'string.pattern.base':
-      'Enter a valid date of birth in the format DD-MM-YYYY',
+      'Enter a valid date of birth in the format DD.MM.YYYY',
     'any.required': 'The "Birthday" field is required',
   }),
   type: Joi.string().required().messages({

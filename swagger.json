@@ -1034,7 +1034,7 @@
           "birthday": {
             "type": "string",
             "description": "User's birthday",
-            "example": "11-05-2005"
+            "example": "11.05.2005"
           },
           "type": {
             "type": "string",
