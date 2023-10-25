@@ -22,6 +22,10 @@ const Newchema = new Schema({
     type: String,
     default: null,
   },
+  text: {
+    type: String,
+    default: null,
+  },
 });
 
 const New = model('new', Newchema);
