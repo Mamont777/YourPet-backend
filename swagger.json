@@ -2,7 +2,7 @@
   "openapi": "3.0.1",
   "info": {
     "version": "2.0.0",
-    "title": "Swagger test",
+    "title": "Your Pet",
     "description": "Pets endpoints",
     "license": {
       "name": "MIT",
@@ -514,8 +514,8 @@
             "name": "page",
             "in": "query",
             "description": "Number of page",
-            "required": "false",
-            "type": "integer"
+            "required": false,
+            "type": "string"
           },
 
           {
@@ -523,7 +523,7 @@
             "in": "query",
             "description": "Limit elements in page",
             "required": false,
-            "type": "integer"
+            "type": "string"
           }
         ],
         "responses": {
@@ -536,6 +536,53 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/api/news/search": {
+      "get": {
+        "tags": ["News"],
+        "summary": "Search news",
+        "parameters": [
+          {
+            "name": "page",
+            "in": "query",
+            "description": "Number of page",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "description": "Limit elements in page",
+            "required": false,
+            "type": "string"
+          },
+          {
+            "name": "query",
+            "in": "query",
+            "description": "Search string",
+            "required": false,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/NewsGetAllResponse"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "No match for your search"
+          },
+          "500": {
+            "description": "Internal server error"
           }
         }
       }
