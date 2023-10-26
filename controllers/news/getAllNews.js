@@ -44,7 +44,7 @@ const getNewsByQuery = async (req, res) => {
   });
 
   if (!result || result.length === 0) {
-    throw HttpError(400, 'Not match for your search');
+    throw HttpError(400, 'No match for your search');
   }
 
   const totalCount = await New.countDocuments({
