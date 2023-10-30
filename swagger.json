@@ -12,7 +12,7 @@
   "consumes": ["application/json", " multipart/form-data"],
   "produces": ["application/json"],
   "servers": [
-    { "url": "https://team-project-backend-881k.onrender.com" },
+    { "url": "https://yourpet-backend-p0vr.onrender.com" },
     { "url": "http://localhost:5050" }
   ],
   "tags": [
