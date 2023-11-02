@@ -12,7 +12,7 @@
   "consumes": ["application/json", " multipart/form-data"],
   "produces": ["application/json"],
   "servers": [
-    { "url": "https://yourpet-backend-p0vr.onrender.com" },
+    { "url": "team-project-backend-881k.onrender.com" },
     { "url": "http://localhost:5050" }
   ],
   "tags": [
@@ -563,7 +563,7 @@
             "name": "query",
             "in": "query",
             "description": "Search string",
-            "required": false,
+            "required": true,
             "type": "string",
             "example": "dog"
           }

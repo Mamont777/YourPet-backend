@@ -2,7 +2,7 @@ const { HttpError } = require('../../helpers');
 const { New } = require('../../models/new');
 
 const getAllNews = async (req, res) => {
-  const { page = 1, limit = 6 } = req.query;
+  const { page = 1, limit = 9 } = req.query;
   const skip = (page - 1) * limit;
   const result = await New.find({}, '', { skip, limit: Number(limit) }).sort({
     date: -1,
@@ -23,7 +23,7 @@ const getAllNews = async (req, res) => {
 };
 
 const getNewsByQuery = async (req, res) => {
-  const { page = 1, limit = 6, query } = req.query;
+  const { page = 1, limit = 9, query } = req.query;
   const skip = (page - 1) * limit;
   const searchWords = query.trim().split(' ');
   const regExpressions = searchWords.map(word => new RegExp(word, 'i'));
@@ -65,4 +65,5 @@ const getNewsByQuery = async (req, res) => {
   });
 };
 
-module.exports = { getAllNews, getNewsByQuery };
+module.exports = getAllNews;
+module.exports = getNewsByQuery;
